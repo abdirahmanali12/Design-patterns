@@ -9,6 +9,8 @@ public class MenClothFactory extends ClothingFactory{
             return new MenShirt();
         if (clothName.equals(ClothName.TROUSER))
             return new MenTrouser();
+        if (clothName.equals(ClothName.MEN_UNDER_SHIRT))
+            return new MenUnderShirt();
         throw  new UnsupportedOperationException("This man cloth is not available");
 
     }
